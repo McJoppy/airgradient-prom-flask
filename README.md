@@ -23,3 +23,13 @@ The metrics received are
 - `rco2`: CO2
 
 Each metric has an associated label of `device_id` to help identify metrics for a specific device.
+
+## Testing
+
+Run via flask in a local dev environment with eg. `DEBUG=true python -m flask --app airgradient --debug run --host 0.0.0.0`.
+
+If you use WSL2 then look at port forwarding to WSL with `netsh`.
+
+### Docker
+
+In project root directory you can build the image with `docker -t <tag> build .` then run with eg. `docker run -it`.
